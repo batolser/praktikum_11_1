@@ -1,5 +1,4 @@
-
-class UserInfo {
+export class UserInfo {
   constructor(/*name, job*/container) {
     this.container = container;
     this.userName = document.querySelector('.user-info__name');

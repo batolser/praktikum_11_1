@@ -1,5 +1,5 @@
 //готово
-class Popup {
+export class Popup {
   constructor(popup) {
     this.popup = popup;
     // слушатели здесь и в других классах пожалуйста устанавливайте в отдельном методе класса,

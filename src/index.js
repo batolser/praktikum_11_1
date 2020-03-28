@@ -1,4 +1,20 @@
+import "./style.css";
+import {Api} from './js/api';
+import {Card} from './js/Card';
+import {CardList} from './js/CardList';
+import {FormValidator} from './js/FormValidator';
+import {Popup} from './js/Popup';
+import {PopupWithForm} from './js/PopupWithForm';
+import {PopupAddCard} from './js/PopupAddCard';
+import {PopupEditUser} from './js/PopupEditUser';
+import {PopupImg} from './js/PopupImg';
+import {UserInfo} from './js/UserInfo';
+import {UserInfoPhoto} from './js/UserInfoPhoto';
+
+
 (function () {
+
+  
 
   const placesList = document.querySelector('.places-list');
   const form = document.forms.new;
@@ -44,14 +60,13 @@
   }
   createEditButton();
 
-  const classUserInfo = new UserInfo(/*userInfoName, userInfoJob,*/userInfoContainer, api);
+  const classUserInfo = new UserInfo(userInfoContainer, api);
   const userInfoPhoto = new UserInfoPhoto(userInfoContainer, api);
 
-  //classUserInfo.setUserInfo(user.name, user.about);
   
-  const cardList = new CardList(placesList, card, /*initialCards,*/ popupImg, api);
+  const cardList = new CardList(placesList, card, popupImg, api);
   cardList.setEventListeners();
- // const popupEditUser = new PopupEditUser(popupEdit, classUserInfo);
+
 
   Promise.all([
     api.getInitialCards(),
@@ -71,7 +86,7 @@
  
   popupAddCard.setEventListenersForm();
   popupAddCard.setEventListeners();
-  userInfoButton.addEventListener('click', popupAddCard.open.bind(popupAddCard));//open
+  userInfoButton.addEventListener('click', popupAddCard.open.bind(popupAddCard));
 
  
   
@@ -83,20 +98,6 @@
 
  
   
-  //classUserInfo.setUserInfo(userInfoName.textContent, userInfoJob.textContent);
-
-  // Надо исправить -- использование classUserInfo до определения объекта
-  // Вообще лучше не смешивать вызоы методов и определение переменных, определите их в начале,
-  // а потом вызывайте методы, добавляйте обработчики.
-  //formEdit.addEventListener('submit', (event) => { classUserInfo.updateUserInfo(event) });
-  //cardList.render();
-
-
-
-  //const classUserInfo = new UserInfo(userInfoName, userInfoJob);
-  //userInfo.setUserInfo(userInfoName.textContent, userInfoJob.textContent);
-
-  //editButton.addEventListener('click', () => { classUserInfo.setUserInfo() });
 
   const classFormValidator = new FormValidator(form);
   classFormValidator.setEventListeners();

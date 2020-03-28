@@ -1,4 +1,5 @@
-class UserInfoPhoto extends UserInfo {
+import {UserInfo} from './UserInfo';
+export class UserInfoPhoto extends UserInfo {
     constructor(container, avatar){
       super(container);
       this.avatar = avatar;

@@ -1,4 +1,5 @@
-class PopupAddCard extends PopupWithForm {
+import {PopupWithForm} from './PopupWithForm';
+export class PopupAddCard extends PopupWithForm {
     constructor(popup, cardList) {
         super(popup);
         this.cardList = cardList;

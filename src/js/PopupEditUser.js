@@ -1,4 +1,6 @@
-class PopupEditUser extends PopupWithForm {
+
+import {PopupWithForm} from './PopupWithForm';
+export class PopupEditUser extends PopupWithForm {
     constructor(popup, classUserInfo, button, api) {
         super(popup);
         this.classUserInfo = classUserInfo;

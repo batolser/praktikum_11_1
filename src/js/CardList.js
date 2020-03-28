@@ -1,5 +1,4 @@
-//готово
-class CardList {
+export class CardList {
 
   constructor(container, card, /*initialCards,*/ popupImg) {
     this.container = container;
