@@ -4,7 +4,7 @@
 
 [Ссылка на проект](https://github.com/batolser/praktikum_11_1.git)
 
-Version 0.0.1
+Version 0.1.0
 
 ## Просмотреть итоговый проект можно двумя способами:
 
