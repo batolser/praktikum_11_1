@@ -17,11 +17,14 @@ Node.js
 Webpack
 <li>
 NPM-пакеты:
-- #### сборка develop
+  
+#### сборка develop
 @babel/cli @babel/core @babel/preset-env autoprefixer babel-loader cross-env css-loader cssnano file-loader gh-pages html-loader html-webpack-plugin@3.2.0 image-webpack-loader lodash mini-css-extract-plugin postcss-loader resolve-url resolve-url-loader style-loader url-loader webpack webpack-cli webpack-dev-server webpack-md5-hash
-- #### сборка build:
+  
+#### сборка build:
 babel-polyfill core-js optimize-css-assets-webpack-plugin resolve-cwd
-- #### deploy проекта:
+
+#### deploy проекта:
 ###### установка gh-pages, задача этой программы для выкладывать в ваш репозиторий на Github в ветку gh-pages, собранные файлы:
 npm install gh-pages --save-dev
 ###### сборка и размещение проекта в интернете:
