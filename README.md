@@ -14,7 +14,7 @@ Version 0.0.1
 ## Как инициализировать проект
 
 1. Склонировать проект
-git clone git@github.com:RA404/modules_js_oop.git
+git clone https://github.com/batolser/praktikum_11_1.git
 2. Установить зависимости для разработчика
 npm install --save-dev @babel/cli @babel/core @babel/preset-env autoprefixer babel-loader cross-env css-loader cssnano file-loader gh-pages html-loader html-webpack-plugin@3.2.0 image-webpack-loader lodash mini-css-extract-plugin postcss-loader resolve-url resolve-url-loader style-loader url-loader webpack webpack-cli webpack-dev-server webpack-md5-hash
 3. Установить зависимости для продакшн версии
