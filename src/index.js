@@ -41,8 +41,15 @@ import {UserInfoPhoto} from './js/UserInfoPhoto';
 
   const card = new Card();
 
+  if (process.env.NODE_ENV === 'production'){
+    BASE_URL = `https://praktikum.tk/cohort8`;
+ }
+ else{
+    BASE_URL = `http://praktikum.tk/cohort8`;
+ }
+
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort8',
+    baseUrl: URL,
     headers: {
       authorization: '2e98d6dc-ed32-4eeb-9f4a-8bd31a2b65d0',
       'Content-Type': 'application/json'
